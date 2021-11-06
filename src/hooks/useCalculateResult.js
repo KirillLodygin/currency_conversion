@@ -1,7 +1,4 @@
 export function useCalculateResult(currencies, denomination, rate) {
-  console.log('useCalculateResult');
-  console.log(currencies);
-
   if ((currencies[0] === currencies[1])){
     return String(denomination);
   } else {

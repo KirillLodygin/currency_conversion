@@ -19,9 +19,6 @@ export default createStore({
   getters: {},
   mutations: {
     setBaseCurrency(state, baseCurrency) {
-      console.log('setBaseCurrency');
-      console.log(baseCurrency);
-
       if (baseCurrency.split('-')[1] === 'Give') {
         state.currencies[0] = baseCurrency.split('-')[0];
       } else {
